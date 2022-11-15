@@ -8,12 +8,6 @@ public abstract class Entity<TId> : IEquatable<Entity<TId>>
 {
     public TId Id { get; protected set; }
 
-    public Type ElementType => throw new NotImplementedException();
-
-    public Expression Expression => throw new NotImplementedException();
-
-    public IQueryProvider Provider => throw new NotImplementedException();
-
     protected Entity(TId id)
     {
         Id = id;
